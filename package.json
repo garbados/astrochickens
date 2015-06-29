@@ -1,0 +1,36 @@
+{
+  "name": "astrochickens",
+  "version": "0.0.0",
+  "description": "A space exploration game of massive scale.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jshint bin lib test index.js && mocha -R spec",
+    "doc": "mkdir doc; jsdoc lib -d doc -R readme.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garbados/astrochickens.git"
+  },
+  "keywords": [
+    "game",
+    "space"
+  ],
+  "author": "Diana Thayer <garbados@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garbados/astrochickens/issues"
+  },
+  "homepage": "https://github.com/garbados/astrochickens#readme",
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "jsdoc": "^3.3.2",
+    "jshint": "^2.8.0",
+    "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "phaser": "^2.3.0"
+  }
+}
