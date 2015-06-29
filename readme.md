@@ -4,6 +4,8 @@
 
 A space exploration game of scale.
 
+**This game is under heavy development, and many of the links in this readme are TODO. You have been warned!**
+
 To play, just go [here][website]! You can play Astrochickens right in your browser.
 
 ## Overview
@@ -29,7 +31,7 @@ For more information, see the [tutorial][] and [reference][].
 
 Want something added to the game? Create an [issue][issues] with your request or idea!
 
-Want to help out? Check out current [issues][issues] and see what strikes your fancy!
+Want to help out? Check out current [issues][] and see what strikes your fancy!
 
 ## License
 
