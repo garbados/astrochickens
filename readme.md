@@ -22,6 +22,8 @@ For more information, see the [tutorial][] and [reference][].
 
 ## Testing
 
+Astrochickens is built with [node.js][] and [npm][] so you'll need to install those before you can run the game's test suite.
+
 	git clone https://github.com/garbados/astrochickens
 	cd astrochickens
 	npm install
@@ -37,6 +39,8 @@ Want to help out? Check out current [issues][] and see what strikes your fancy!
 
 [ISC][license], yo.
 
+[node.js]: https://nodejs.org/
+[npm]:https://www.npmjs.com/
 [issues]: https://github.com/garbados/astrochickens/issues
 [license]: http://opensource.org/licenses/ISC
 [website]: #TODO

@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test": "jshint bin lib test index.js && mocha -R spec",
-    "doc": "jsdoc lib -d doc -R readme.md"
+    "doc": "jsdoc lib -d doc -R readme.md",
+    "build": "mkdir build; browserify lib/index.js -o build/app.js && cp -r lib/templates/*.html build/",
+    "start": "npm run build && serve build"
   },
   "repository": {
     "type": "git",
@@ -28,7 +30,8 @@
     "browserify": "^10.2.4",
     "jsdoc": "^3.3.2",
     "jshint": "^2.8.0",
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "serve": "^1.4.0"
   },
   "dependencies": {
     "phaser": "^2.3.0"
