@@ -37,6 +37,5 @@
     "serve": "^1.4.0"
   },
   "dependencies": {
-    "phaser": "^2.3.0"
   }
 }
