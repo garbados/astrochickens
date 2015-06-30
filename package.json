@@ -9,9 +9,11 @@
   "scripts": {
     "test": "jshint bin lib test index.js && mocha -R spec",
     "doc": "jsdoc lib -d doc -R readme.md",
-    "assets": "mkdir -p build/assets; find lib/assets/ -name *.png | xargs -i cp {} build/assets/",
-    "build": "mkdir build; browserify lib/index.js -o build/app.js && cp -r lib/templates/*.html build/",
-    "start": "npm run build && npm run assets && serve build"
+    "bundle-assets": "mkdir -p build/assets; find assets/ -name *.png | xargs -i cp {} build/assets/",
+    "bundle-html": "mkdir build; cp -r templates/*.html build/",
+    "bundle": "npm run bundle-assets && npm run bundle-html",
+    "compile": "mkdir build; browserify lib/index.js -o build/app.js",
+    "start": "npm run bundle && npm run compile && serve build"
   },
   "repository": {
     "type": "git",
