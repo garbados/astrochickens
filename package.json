@@ -35,8 +35,5 @@
     "jshint": "^2.8.0",
     "mocha": "^2.2.5",
     "serve": "^1.4.0"
-  },
-  "dependencies": {
-    "bower": "^1.4.1"
   }
 }
