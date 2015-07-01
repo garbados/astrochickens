@@ -7,12 +7,13 @@
     "test": "test"
   },
   "scripts": {
+    "postinstall": "bower install",
     "test": "jshint bin lib test index.js && mocha -R spec",
     "doc": "jsdoc lib -d doc -R readme.md",
     "bundle-assets": "mkdir -p build/assets; find assets/ -name *.png | xargs -i cp {} build/assets/",
     "bundle-html": "mkdir build; cp -r templates/*.html build/",
     "bundle": "npm run bundle-assets && npm run bundle-html",
-    "compile": "mkdir build; browserify lib/index.js -o build/app.js",
+    "compile": "mkdir build; browserify lib/index.js -o build/app.js && cp bower_components/phaser/build/plaser.min.js build/phaser.js",
     "start": "npm run bundle && npm run compile && serve build"
   },
   "repository": {
@@ -37,5 +38,6 @@
     "serve": "^1.4.0"
   },
   "dependencies": {
+    "bower": "^1.4.1"
   }
 }
