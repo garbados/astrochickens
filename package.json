@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jshint bin lib test index.js && mocha -R spec",
+    "test": "jshint lib test index.js && mocha -R spec",
     "doc": "jsdoc lib -d doc -R readme.md",
     "bundle-assets": "mkdir -p build/assets; find assets/ -name *.png | xargs -i cp {} build/assets/",
     "bundle-html": "mkdir build; cp -r templates/*.html build/",
